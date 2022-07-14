@@ -1,4 +1,4 @@
-#body-contents{
+#body-contents {
     margin: 150px 50px 170px 50px;
     display: flex;
     flex-direction: column;
@@ -8,12 +8,19 @@
     overflow: auto;
 }
 
-#body-contents h1{
+#body-contents h1 {
     font-size: 2em;
 }
-#body-contents .about-me p{
+
+#body-contents .about-me p {
     font-size: 1.5em;
     margin: 10px 50px;
     padding: 15px;
     justify-content: center;
+}
+
+@media (max-width: 800px) {
+    #body-contents {
+        margin: 150px 10px 170px 10px;
+    }
 }
