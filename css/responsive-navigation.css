@@ -1,0 +1,51 @@
+.navbar-container .menu-btn i {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    margin: 30px auto;
+    opacity: 75%;
+}
+
+#click {
+    display: none;
+}
+
+@media (max-width: 940px) {
+    .navbar-container .menu-btn i {
+        display: block;
+
+    }
+
+    .navbar-container ul {
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        height: 70%;
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 120px 0 175px 0;
+        transition: all 0.3s ease;
+        background: #060d24;
+    }
+
+    #click:checked~ul {
+        left: 0%;
+    }
+
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
+        font-size: 37px;
+    }
+
+    .navbar-container ul li {
+        margin: 25px 0px;
+    }
+
+    .navbar-container ul li a {
+        font-size: 20px;
+        display: block;
+    }
+
+}

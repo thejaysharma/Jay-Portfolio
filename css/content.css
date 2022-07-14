@@ -1,0 +1,19 @@
+#body-contents{
+    margin: 150px 50px 170px 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: rgb(200, 200, 200);
+    overflow: auto;
+}
+
+#body-contents h1{
+    font-size: 2em;
+}
+#body-contents .about-me p{
+    font-size: 1.5em;
+    margin: 10px 50px;
+    padding: 15px;
+    justify-content: center;
+}
