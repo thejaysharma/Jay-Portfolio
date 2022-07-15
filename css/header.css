@@ -13,6 +13,7 @@ body .body {
     background: #060d24;
     min-height: 100vh;
     flex-direction: column;
+    overflow: hidden;
 }
 
 header .header-container {
