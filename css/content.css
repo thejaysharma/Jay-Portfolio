@@ -1,5 +1,14 @@
 html {
     overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    scroll-margin-top: 170px;
+}
+
+#projects {
+    scroll-margin-top: 120px;
 }
 
 #body-contents {
@@ -83,6 +92,7 @@ textarea {
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
     border: 2px solid rgba(0, 0, 0, 0.5);
     resize: none;
+    font-size: 1.3em;
 }
 
 ::placeholder {
@@ -95,14 +105,78 @@ textarea {
         height: 20%;
     }
 }
-.send-button{
+
+.send-button {
     cursor: pointer;
 }
-.form-details .inputbox input:hover{
+
+.form-details .inputbox input:hover {
     transform: rotateY(15deg);
     transition: 0.3s;
 }
-.form-details .inputbox textarea:hover{
+
+.form-details .inputbox textarea:hover {
     transform: rotateY(15deg);
     transition: 0.3s;
+}
+
+.project-section .project-boxes {
+    position: relative;
+    display: inline-flex;
+    margin: 30px 30px;
+    flex-direction: row;
+    width: 35vw;
+    height: 20vw;
+    background: #060d24;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.project-section .project-boxes:before {
+    content: ' ';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    z-index: 0;
+    background: linear-gradient(315deg, #00ccff, #060d24, #060d24, #d400d4);
+    filter: blur(5px);
+}
+
+.project-section .project-boxes .box-content1,
+.box-content2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: #060d24;
+    z-index: 0;
+}
+
+.project-section .project-boxes span {
+    position: relative;
+    font-size: 2em;
+}
+
+@media(max-width:1000px) {
+    .project-section .project-boxes {
+        width: 60vw;
+        height: 30vw;
+    }
+}
+
+@media(max-width:600px) {
+    #body-contents .about-me p {
+        margin: 10px 10px;
+    }
+
+    .project-section .project-boxes {
+        width: 80vw;
+        height: 40vw;
+    }
 }
